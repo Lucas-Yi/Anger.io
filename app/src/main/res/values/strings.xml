@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Angry.io</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="str_play">SINGLE PLAYER</string>
+    <string name="str_login">SETUP MULTI-PLAYERS</string>
+    <string name="str_create_account">CREATE ACCOUNT</string>
+    <string name="str_about">ABOUT</string>
+    <string name="str_exit">EXIT</string>
+    <string name="join_game">Join Game</string>
+    <string name="options">Options</string>
+    <string name="rescan">Rescan</string>
+    <string name="scanning">Scanning&#8230;</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="signin_other_error">There was an issue with sign-in, please try again later.</string>
+    <string name="signin_failure">Unable to sign in.</string>
+    <string name="app_id">202135199860</string>
+    <string name="show_leaderboards">Leaderboards</string>
+    <string name="leaderboards_not_available">Please sign in to view leaderboards.</string>
+
+</resources>

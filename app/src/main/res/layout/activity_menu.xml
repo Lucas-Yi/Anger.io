@@ -1,0 +1,147 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.unimelb.angry_io.Activities.MenuActivity">
+
+    <TextView
+        style="@style/MenuFont"
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/app_name"
+        android:layout_below="@+id/txv_setup_multiple_players"
+        android:layout_toRightOf="@+id/txv_setup_multiple_players"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="80dp"
+        android:layout_x="137dp"
+        android:layout_y="34dp"
+        android:textSize="52dp"
+        android:textColor="#0000ff" />
+
+    <TextView
+        android:id="@+id/txv_single_player"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_play"
+        android:layout_below="@+id/txv_setup_multiple_players"
+        android:layout_toRightOf="@+id/txv_setup_multiple_players"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="80dp"
+        android:layout_x="211dp"
+        android:layout_y="130dp"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+
+    <TextView
+        style="@style/MenuFont"
+        android:id="@+id/txv_setup_multiple_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_login"
+        android:layout_below="@+id/txv_about"
+        android:layout_toRightOf="@+id/txv_about"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="44dp"
+        android:layout_x="180dp"
+        android:layout_y="165dp"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+
+    <TextView
+        android:id="@+id/txv_about"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_about"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="181dp"
+        android:layout_marginTop="25dp"
+        android:layout_x="241dp"
+        android:layout_y="200dp"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+    <TextView
+        android:id="@+id/txv_exit"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_exit"
+        android:layout_below="@+id/txv_about"
+        android:layout_alignLeft="@+id/txv_setup_multiple_players"
+        android:layout_marginLeft="24dp"
+        android:layout_x="248dp"
+        android:layout_y="235dp"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+
+    <!-- sign-in button -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/playerName"
+        android:layout_x="12dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/avatar"
+        android:layout_gravity="center_horizontal"
+        android:layout_x="12dp"
+        android:layout_y="30dp"
+
+        android:baselineAlignBottom="true" />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_toLeftOf="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!-- sign-out button -->
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:layout_y="82dp"
+        android:visibility="gone" />
+
+    <Button android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_leaderboards"
+        android:id="@+id/show_leaderboards_button"
+        android:layout_x="207dp"
+        android:layout_y="-2dp" />
+
+    <!--ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/avatar"
+        android:layout_gravity="center_horizontal"
+        android:baselineAlignBottom="true"
+        android:layout_x="33dp"
+        android:layout_y="127dp" /-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/playerEmail"
+        android:layout_gravity="center_horizontal"
+        android:layout_x="491dp"
+        android:layout_y="0dp"
+        />
+
+</AbsoluteLayout>

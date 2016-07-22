@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:id="@+id/MyLinearLayout">
+
+
+    <!--ImageView
+        android:id="@+id/imgv_menuBG"
+        android:src="@drawable/balance_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" /-->
+
+    <!--LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="left"
+        android:orientation="vertical" -->
+
+    <!--TextView
+        style="@style/MenuFont"
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/app_name"
+        android:layout_below="@+id/txv_multi"
+        android:layout_toRightOf="@+id/txv_multi"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="80dp"
+        android:layout_x="137dp"
+        android:layout_y="34dp"
+        android:textSize="52dp"
+        android:textColor="#0000ff" />
+
+    <TextView
+        android:id="@+id/txv_single_player"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_play"
+        android:layout_below="@+id/txv_multi"
+        android:layout_toRightOf="@+id/txv_multi"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="80dp"
+        android:layout_x="211dp"
+        android:layout_y="130dp" /-->
+
+    <com.unimelb.angry_io.System.WorldView
+        android:id="@+id/multiple_worldView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:screenOrientation="portrait" />
+    <!--TextView
+        style="@style/MenuFont"
+        android:id="@+id/txv_setup_multiple_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_login"
+        android:layout_below="@+id/txv_about"
+        android:layout_toRightOf="@+id/txv_about"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="44dp"
+        android:layout_x="180dp"
+        android:layout_y="165dp" /-->
+
+    <!--TextView
+        android:id="@+id/txv_create_account"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_create_account"
+        android:layout_below="@+id/txv_about"
+        android:layout_toRightOf="@+id/txv_about"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="44dp"
+        android:layout_x="197dp"
+        android:layout_y="184dp" /-->
+
+    <!--TextView
+        android:id="@+id/txv_about"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_about"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="181dp"
+        android:layout_marginTop="25dp"
+        android:layout_x="241dp"
+        android:layout_y="200dp" />
+
+    <TextView
+        android:id="@+id/txv_exit"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/str_exit"
+        android:layout_below="@+id/txv_about"
+        android:layout_alignLeft="@+id/txv_multi"
+        android:layout_marginLeft="24dp"
+        android:layout_x="248dp"
+        android:layout_y="235dp" /-->
+
+    <!--/LinearLayout-->
+
+
+    <!--FrameLayout
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.14"
+        android:id="@+id/frameLayoutMaze"-->
+        <!--unimelb.mingyuc.maze.graphics.Graphics
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/-->
+        <!--android.opengl.GLSurfaceView
+            android:id="@+id/glsurfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <unimelb.mingyuc.maze.MyGLSurfaceView
+            android:id="@+id/glSurfaceViewID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23" /-->
+    <!--/FrameLayout-->
+
+</AbsoluteLayout>
